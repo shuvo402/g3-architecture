@@ -115,6 +115,7 @@ main{
 }
 .some-head{
     margin:auto 0px ;
+    
 }
 .some-p{
     margin-top: 0px;
@@ -128,10 +129,74 @@ main{
 }
 .spon-img img{
     width: 100px;
+    
 }
+
+.feature-container{
+    display: flex;
+    /* max-width: 100%; */
+    margin-top: 50px;
+    margin-bottom: 100px;
+    gap:50px
+
+
+}
+.feature-img img{
+    width: 700px;
+    height: 100%;
+    
+}
+.feture-head{
+    font-size: 35px;
+    font-weight:bold ;
+    border-left: 5px solid orangered;
+    padding-left: 10px;
+}
+.feature-box{
+    background-color: rgb(236, 232, 232);
+    /* box-shadow: 10px 10px 10px; */
+    margin-right: 40px;
+    
+    
+}
+.fhp{
+    padding: 10px 20px 0px 20px;
+    margin-bottom: 5px;
+}
+.ptop{
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+}
+
+.year{
+    background-color: #f8760b;
+    width: 300px;
+    text-align: center;
+    border: 2px solid black;
+    position: relative;
+    bottom: 90px;
+    right: 50px;
+
+}
+.year h2{
+    color: white;
+    font-size: 2rem;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.year p{
+    color: white;
+    font-size: 20px;
+    margin-top: 0px;
+    padding-bottom: 20px;
+}
+
+
 /* mobile device */
 @media screen and (max-width: 576px) {
-    nav{
+    nav, .box-container{
         flex-direction: column;
     }
     header{
@@ -167,6 +232,52 @@ main{
         gap: 20px;
         padding-left: 0rem;
     }
+    .feature-container{
+        flex-direction: column;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .feature-box{
+        max-width:400px;
+
+    }
+    .fact-des{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .year{
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .feature-img img{
+        max-width: 350px;
+    }
+    .spon-img{
+        display: flex;
+        flex-direction: column;
+        padding-left: 120px;
+        margin-top: 20px;
+        
+        
+    }
+    .spon-img img{
+        margin-top: 20px;
+    }
+    .spon-container{
+        text-align: center;
+    }
+    .feature-p{
+        text-align: justify;
+        max-width: 400px;
+        
+        
+    }
+    .box-container, .box{
+        margin-left: 45px;
+        
+    }
+    
+
 
     
 }
